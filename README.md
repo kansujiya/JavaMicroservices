@@ -1,5 +1,5 @@
 # Java MicroServices | Web Service | API Gateway | Naming Server | Routing | Logging | Resilience | H2 Databse Configrations
-Source code have four componet. Currency-Exchange & Currency-Conversion are mirco services & Communicating with each other. Naming Server is Service discovery to register microservices instances along with load balancing. Spring Eureka server is used for this purpose. Last but not least Client side API gateway to manage all incoming requests using routings.
+Source code have four componet. Currency-Exchange & Currency-Conversion are mirco services & Communicating with each other using feign & RestTemplet. Naming Server is Service discovery/Service registry to register microservices instances. Last but not least Client side API gateway to manage all incoming/outgoing requests using routings.
 
 * ##### Note - Currency-Exchange is built with H2 Memory database and data will be seeded using [data.sql](https://github.com/kansujiya/JavaMicroservices/blob/master/currency-exchange-service/src/main/resources/data.sql) on app start.
 
