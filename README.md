@@ -21,7 +21,7 @@ Project is created with:
 * spring-cloud-starter-openfeign (To communicate microservice)
 * netflix-eureka-client (To register microservice in naming server)
 * resilience4j (To manage failover, bulkhead, retry, circuit-breaker & many more)
-* spring-cloud-starter-config (To manage Centralized Configuration to read profiles & envoirments variables)
+* spring-cloud-starter-config (To manage Centralized Configuration to read profiles & envoirments variables using centerlised github repo)
 * spring-cloud-starter-netflix-eureka-server (Naming server/Service registry/Service Discovery for microservices)
 * spring-cloud-starter-gateway (To manage ingres & egres traffic routing from internet & inbetween microservices & client side load balancing for microservice. Manage Authorization, Authetication, loging, chaching for microservices.)
 
