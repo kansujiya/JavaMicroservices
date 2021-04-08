@@ -1,5 +1,5 @@
 # JavaMicroservices
-Java MicroServices | Web Service | API Gateway | Naming Server | Routing | Resilience | H2 Databse Configrations
+Java MicroServices | Web Service | API Gateway | Naming Server | Routing | Logging | Resilience | H2 Databse Configrations
 
 http://localhost:8000/currency-exchange/from/AUD/to/INR
 http://localhost:8100/currency-conversion-feign/from/AUD/to/INR/quantity/200
