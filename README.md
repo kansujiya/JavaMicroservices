@@ -15,29 +15,50 @@ Project is created with:
 * Java: 8
 * Springboot: 2.4.4
 * H2 Database
+* JPA
 * Actuator
+* spring-cloud-starter-openfeign
 * netflix-eureka-client
 * resilience4j
 * spring-cloud-starter-config
 * spring-cloud-starter-netflix-eureka-server
 * spring-cloud-starter-gateway
-* JPA
 
-## Webservices
-http://localhost:8000/currency-exchange/from/AUD/to/INR
-http://localhost:8100/currency-conversion-feign/from/AUD/to/INR/quantity/200
-http://localhost:8000/h2-console/
-http://localhost:8761/
+## Componets
+* currency-exchange-service
+* currency-conversion-service
+* naming-server
+* api-gateway
 
-## After Service Discovery
-http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/AUD/to/INR \n
-http://localhost:8765/CURRENCY-CONVERSION/currency-conversion-feign/from/AUD/to/INR/quantity/200 \n
-http://localhost:8765/currency-conversion/currency-conversion/from/AUD/to/INR/quantity/200
+## Setup
+* Imports all componets as maven projects.
+* currency-exchange-service will run on port 8000
+* currency-conversion-service will run on port 8100 
+* naming-server 8761 
+* api-gateway 8765
+* H2 console link - http://127.0.0.1:80/h2-console/
+* Actuator Link(Health Check) - http://127.0.0.1:8000/actuator
+* Swagger - http://127.0.0.1:8000/api-docs
 
-## After API Gateway & Client side load balancer
-http://localhost:8765/get \n
-http://localhost:8765/currency-exchange/from/AUD/to/INR \n
-http://localhost:8765/currency-conversion-feign/from/AUD/to/INR/quantity/200 \n
-http://localhost:8765/currency-conversion-new/from/AUD/to/INR/quantity/200 \n
-http://localhost:8000/retry-api \n
-http://localhost:8000/circuit-breaker-api \n
+
+## APIs Documentations
+* currency-exchange-service api 
+* http://localhost:8000/currency-exchange/from/AUD/to/INR
+* http://localhost:8765/CURRENCY-EXCHANGE/currency-exchange/from/AUD/to/INR
+* http://localhost:8765/currency-exchange/from/AUD/to/INR
+* http://localhost:8000/retry-api
+* http://localhost:8000/circuit-breaker-api
+* H2 in-momery databse link
+* http://localhost:8000/h2-console/
+* currency-conversion-service api
+* http://localhost:8100/currency-conversion/from/AUD/to/INR/quantity/200
+* http://localhost:8100/currency-conversion-feign/from/AUD/to/INR/quantity/200
+* http://localhost:8765/CURRENCY-CONVERSION/currency-conversion-feign/from/AUD/to/INR/quantity/200
+* http://localhost:8765/currency-conversion/currency-conversion/from/AUD/to/INR/quantity/200
+* http://localhost:8765/currency-conversion-feign/from/AUD/to/INR/quantity/200
+* http://localhost:8765/currency-conversion-feign/from/AUD/to/INR/quantity/200
+* http://localhost:8765/currency-conversion-new/from/AUD/to/INR/quantity/200
+* naming-server link
+* http://localhost:8761/ 
+* api-gateway link
+* http://localhost:8765/get
