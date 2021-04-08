@@ -14,15 +14,16 @@ Source code have four componet. Currency-Exchange & Currency-Conversion are mirc
 Project is created with:
 * Java: 8
 * Springboot: 2.4.4
+* Tomcate
 * H2 Database
-* JPA
-* Actuator
-* spring-cloud-starter-openfeign
-* netflix-eureka-client
-* resilience4j
-* spring-cloud-starter-config
-* spring-cloud-starter-netflix-eureka-server
-* spring-cloud-starter-gateway
+* JPA (Java Persistence API)
+* Actuator (For Health Check)
+* spring-cloud-starter-openfeign (To communicate microservice)
+* netflix-eureka-client (To register microservice in naming server)
+* resilience4j (To manage failover, bulkhead, retry, circuit-breaker & many more)
+* spring-cloud-starter-config (To manage Centralized Configuration to read profiles & envoirments variables)
+* spring-cloud-starter-netflix-eureka-server (Naming server/Service registry/Service Discovery for microservices)
+* spring-cloud-starter-gateway (To manage ingres & egres traffic routing from internet & inbetween microservices & client side load balancing for microservice. Manage Authorization, Authetication, loging, chaching for microservices.)
 
 ## Componets
 * currency-exchange-service
