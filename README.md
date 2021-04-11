@@ -69,7 +69,7 @@ Project is created with:
 * http://localhost:8765/currency-conversion-new/from/AUD/to/INR/quantity/200
 
 ## Docker
-### To run all application componet run below command in terminal, It will start all containers in local.
+### To run all application componets run below command in terminal to start all microservices in local.
 * docker-compose up
 ### Docker image commands
 * Docker image pull <name><tag:optional>[To pull new docker image in local from docker registry/hub]
