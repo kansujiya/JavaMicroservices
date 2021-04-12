@@ -17,6 +17,8 @@ Project is created with:
 * Java: 8
 * Springboot: 2.4.4
 * Tomcate
+* Docker
+* Kubernetes
 * H2 Database
 * JPA (Java Persistence API)
 * Actuator (For Health Check)
