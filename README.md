@@ -143,5 +143,4 @@ To make current project into Kubernetes enabled need to required few changes lik
 - Kubectl create configmap {name} —form-literal={environment-variable-key}={environment-variable-value} [For centralised configuration create config]
 - Kubectl get configmap [to get available configuration]
 - Kubectl get configmap {name} -o yaml [To see detail of specific configuration in yaml form]
-- Kubectl get configmap {name} -o yaml [To see detail of specific configuration in yaml form] }} configmap.yaml [to export generated yaml file into local]
-
+- Kubectl get configmap {name} -o yaml configmap.yaml [to export generated yaml file into local]
