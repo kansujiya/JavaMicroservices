@@ -112,6 +112,7 @@
 				<configuration>
 					<image>
 						<name>xyz.microservices/mmv2-${project.artifactId}:${project.version}</name>
+						<pullPolicy>IF_NOT_PRESENT</pullPolicy>
 					</image>
 				</configuration>
 			</plugin>
